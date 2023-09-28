@@ -51,16 +51,16 @@ Defines:
 
 | Clock    | Source    | Output Frequency |
 |----------|-----------|------------------|
-| FLL      | IMO       | 50.0 MHz         |
+| FLL      | IMO       | 100.0 MHz        |
 | PLL      | IMO       | 100.0 MHz        |
-| CLK_HF0  | CLK_PATH0 | 50 MHz           |
-| CLK_HF1  | CLK_PATH1 | 340 MHz          |
-| CLK_HF2  | CLK_PATH2 | 196 MHz          |
-| CLK_HF3  | CLK_PATH3 | 144 MHz          |
-| CLK_HF4  | CLK_PATH4 | 100 MHz          |
-| CLK_HF5  | CLK_PATH5 | 8 MHz            |
-| CLK_HF6  | CLK_PATH5 | 8 MHz            |
-| CLK_HF7  | CLK_PATH5 | 8 MHz            |
+| CLK_HF0  | CLK_PATH3 | 200 MHz          |
+| CLK_HF1  | CLK_PATH1 | 350 MHz          |
+| CLK_HF2  | CLK_PATH4 | 100 MHz          |
+| CLK_HF3  | CLK_PATH3 | 100 MHz          |
+| CLK_HF4  | CLK_PATH2 | 125 MHz          |
+| CLK_HF5  | CLK_PATH2 | 125 MHz          |
+| CLK_HF6  | CLK_PATH3 | 200 MHz          |
+| CLK_HF7  | CLK_PATH6 | 8 MHz            |
 
 ### Power Configuration
 
@@ -78,7 +78,7 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 
 ## More information
 * [KIT_XMC72_EVK_MUR_43439M2 BSP API Reference Manual][api]
-* [KIT_XMC72_EVK_MUR_43439M2 Documentation](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc72_evk_mur_43439m2/)
+* [KIT_XMC72_EVK_MUR_43439M2 Documentation](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc72_evk/)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)

@@ -14,6 +14,16 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.0.0
+* Fixed issue where CM0P prebuilt image would enable both CM7 cores on devices which contain
+  two CM7 cores, even for single core applications.
+* Updated default clock divider selections to better align with frequency limitations documented
+  in the datasheet.
+
+##### Known issues:
+Issue: Wifi companion radio connection may fail when the board is programmed using `make program`
+
+Workaround: Program the board using an IDE launch config.
 #### v1.2.0
 * Updated linker scripts and startup code to align with mtb-pdl-cat1 v3.4.0
 * Added functionality to enable BSP Assistant chip flow
@@ -38,7 +48,7 @@ Minimum required ModusToolbox™ Software Environment: v3.0.0
 
 ### More information
 * [KIT_XMC72_EVK_MUR_43439M2 BSP API Reference Manual][api]
-* [KIT_XMC72_EVK_MUR_43439M2 Documentation](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc72_evk_mur_43439m2/)
+* [KIT_XMC72_EVK_MUR_43439M2 Documentation](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc72_evk/)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
