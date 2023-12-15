@@ -1,5 +1,11 @@
 # KIT_XMC72_EVK_MUR_43439M2 BSP Release Notes
-The KIT_XMC72_EVK_MUR_43439M2, in combination with the 1YN radio module, supports Wi-Fi/Bluetooth® connectivity examples and a 272-pin evaluation board, is based on the XMC7000 family of devices. XMC7000 MCU is designed for industrial applications. The evaluation board carries a XMC7000D microcontroller, a M.2 interface connector for interfacing radio modules based on AIROC™ Wi-Fi and Bluetooth® combos, SMIF dual header compatible with Digilent Pmod for interfacing HYPERBUS™ memories (currently not supported), and headers compatible with Arduino for interfacing Arduino shields. In addition, the board features an on-board programmer/debugger (KitProg3), a 512-Mbit QSPI NOR flash, CAN FD transceiver, Gigabit Ethernet PHY transceiver with RJ45 connector interface, a micro-B connector for USB device interface, three user LEDs, one potentiometer, and two push buttons. The board supports operating voltages from 3.3 V to 5.0 V for XMC7000D device.
+The KIT_XMC72_EVK_MUR_43439M2, and a 272-pin evaluation board, is based on the XMC7000 family of devices. XMC7000 MCU is designed for industrial applications. The evaluation board carries a XMC7000D microcontroller, a M.2 interface connector for interfacing radio modules based on AIROC™ Wi-Fi and Bluetooth® combos, SMIF dual header compatible with Digilent Pmod for interfacing HYPERBUS™ memories (currently not supported), and headers compatible with Arduino for interfacing Arduino shields. In addition, the board features an on-board programmer/debugger (KitProg3), a 512-Mbit QSPI NOR flash, CAN FD transceiver, Gigabit Ethernet PHY transceiver with RJ45 connector interface, a micro-B connector for USB device interface, three user LEDs, one potentiometer, and two push buttons. The board supports operating voltages from 3.3 V to 5.0 V for XMC7000D device.
+
+**Note:**
+KIT_XMC72_EVK_MUR_43439M2 is the board support package for the XMC7200 evaluation kit in combination with the 1YN radio module and supports XMC7000 MCU examples and Wi-Fi connectivity examples.
+
+**The 1YN radio module supports Wi-Fi/Bluetooth® connectivity. However, currently KIT_XMC72_EVK_MUR_43439M2 doesn't support the Bluetooth® functionality and the WLAN functionality in low power mode. For more details, refer to the**
+[kit release notes](https://www.infineon.com/dgdl/Infineon-KIT_XMC72_EVK-XMC7200-evaluation-kit-release-notes-UserManual-v04_00-EN.pdf?fileId=8ac78c8c8412f8d301842e69fcde7b8a)
 
 NOTE: BSPs are versioned by family. This means that version 1.2.0 of any BSP in a family (eg: XMC™ ) will have the same software maturity level. However, not all updates are necessarily applicable for each BSP in the family so not all version numbers will exist for each board. Additionally, new BSPs may not start at version 1.0.0. In the event of adding a common feature across all BSPs, the libraries are assigned the same version number. For example if BSP_A is at v1.3.0 and BSP_B is at v1.2.0, the event will trigger a version update to v1.4.0 for both BSP_A and BSP_B. This allows the common feature to be tracked in a consistent way.
 
@@ -14,6 +20,8 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.0.1
+* Updated the description in README file and added memory-analyzer configuration support for KIT_XMC72_EVK and KIT_XMC72_EVK_MUR_43439M2 BSPs.
 #### v2.0.0
 * Fixed issue where CM0P prebuilt image would enable both CM7 cores on devices which contain
   two CM7 cores, even for single core applications.
@@ -21,13 +29,20 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
   in the datasheet.
 
 ##### Known issues:
-Issue: Wifi companion radio connection may fail when the board is programmed using `make program`
+Issue: Wi-Fi companion radio connection may fail when the board is programmed using `make program`.
 
 Workaround: Program the board using an IDE launch config.
+#### v1.2.1
+* Updated the description in README file for KIT_XMC72_EVK and KIT_XMC72_EVK_MUR_43439M2 BSPs
 #### v1.2.0
 * Updated linker scripts and startup code to align with mtb-pdl-cat1 v3.4.0
 * Added functionality to enable BSP Assistant chip flow
 * Added capabilities to match BSPS created by BSP Assistant chip flow
+
+##### Known issues:
+Issue: FreeRTOS task delay may take longer time when the board is programmed using IDE launch config.
+
+Workaround: Reset the board after the programming.
 #### v1.1.0
 * Add macro `CYBSP_USER_BTN_DRIVE` indicating the drive mode that should be used for user buttons
 #### v1.0.0

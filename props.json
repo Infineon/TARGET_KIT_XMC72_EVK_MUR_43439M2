@@ -1,6 +1,6 @@
 {
     "core": {
-        "version": "2.0.0.35467"
+        "version": "2.0.1.37683"
     },
     "opt": {
         "props": {
@@ -15,6 +15,7 @@
                 "cat1c",
                 "cyw43439",
                 "cyw43xxx",
+                "dma",
                 "ethernet",
                 "flash_8384k",
                 "hal",
