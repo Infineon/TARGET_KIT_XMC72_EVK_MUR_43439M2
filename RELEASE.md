@@ -20,17 +20,28 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.1.0
+* Updated the KIT_XMC72_EVK, KIT_XMC72_EVK_MUR_43439M2, KIT_XMC71_EVK_LITE_V1 and KIT_XMC71_EVK_LITE_V2 BSPs to use ECO as main clock source
+#### v2.0.2
+* Updated the BSP description for KIT_XMC71_EVK_LITE_V1 and KIT_XMC71_EVK_LITE_V2 BSPs
+#### v2.0.1
+* Updated the description in README file for KIT_XMC72_EVK and KIT_XMC72_EVK_MUR_43439M2 BSPs
+#### v2.0.0
+* Fixed issue where CM0P prebuilt image would enable both CM7 cores on devices which contain
+  two CM7 cores, even for single core applications.
+* Updated default clock divider selections to better align with frequency limitations documented
+  in the datasheet.
+
+##### Known issues:
+Issue: Wifi companion radio connection may fail when the board is programmed using `make program`
+
+Workaround: Program the board using an IDE launch config.
 #### v1.2.1
 * Updated the description in README file for KIT_XMC72_EVK and KIT_XMC72_EVK_MUR_43439M2 BSPs
 #### v1.2.0
 * Updated linker scripts and startup code to align with mtb-pdl-cat1 v3.4.0
 * Added functionality to enable BSP Assistant chip flow
 * Added capabilities to match BSPS created by BSP Assistant chip flow
-
-##### Known issues:
-Issue: FreeRTOS task delay may take longer time when the board is programmed using IDE launch config.
-
-Workaround: Reset the board after the programming.
 #### v1.1.0
 * Add macro `CYBSP_USER_BTN_DRIVE` indicating the drive mode that should be used for user buttons
 #### v1.0.0
@@ -43,8 +54,8 @@ This version of the KIT_XMC72_EVK_MUR_43439M2 BSP was validated for compatibilit
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
 | ModusToolbox™ Software Environment        | 3.1.0   |
-| GCC Compiler                              | 11.3.1  |
-| IAR Compiler                              | 9.30.1  |
+| GCC Compiler                              | 12.2.1  |
+| IAR Compiler                              | 9.40.2  |
 | ARM Compiler                              | 6.16    |
 
 Minimum required ModusToolbox™ Software Environment: v3.0.0
@@ -59,4 +70,4 @@ Minimum required ModusToolbox™ Software Environment: v3.0.0
 [api]: https://infineon.github.io/TARGET_KIT_XMC72_EVK_MUR_43439M2/html/modules.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024.

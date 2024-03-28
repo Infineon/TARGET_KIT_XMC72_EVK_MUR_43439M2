@@ -57,16 +57,16 @@ Defines:
 
 | Clock    | Source    | Output Frequency |
 |----------|-----------|------------------|
-| FLL      | IMO       | 50.0 MHz         |
-| PLL      | IMO       | 100.0 MHz        |
-| CLK_HF0  | CLK_PATH0 | 50 MHz           |
-| CLK_HF1  | CLK_PATH1 | 340 MHz          |
-| CLK_HF2  | CLK_PATH2 | 196 MHz          |
-| CLK_HF3  | CLK_PATH3 | 144 MHz          |
-| CLK_HF4  | CLK_PATH4 | 100 MHz          |
-| CLK_HF5  | CLK_PATH5 | 8 MHz            |
-| CLK_HF6  | CLK_PATH5 | 8 MHz            |
-| CLK_HF7  | CLK_PATH5 | 8 MHz            |
+| FLL      | ECO       | 100.0 MHz        |
+| PLL      | ECO       | 100.0 MHz        |
+| CLK_HF0  | CLK_PATH3 | 200 MHz          |
+| CLK_HF1  | CLK_PATH1 | 350 MHz          |
+| CLK_HF2  | CLK_PATH4 | 100 MHz          |
+| CLK_HF3  | CLK_PATH3 | 100 MHz          |
+| CLK_HF4  | CLK_PATH2 | 125 MHz          |
+| CLK_HF5  | CLK_PATH2 | 125 MHz          |
+| CLK_HF6  | CLK_PATH3 | 200 MHz          |
+| CLK_HF7  | CLK_PATH5 | 0 MHz            |
 
 ### Power Configuration
 
@@ -93,4 +93,4 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 [settings]: https://infineon.github.io/TARGET_KIT_XMC72_EVK_MUR_43439M2/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024.
