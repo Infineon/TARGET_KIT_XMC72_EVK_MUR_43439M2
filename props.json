@@ -1,12 +1,11 @@
 {
     "core": {
-        "version": "2.1.0.39719"
+        "version": "2.1.1.43194"
     },
     "opt": {
         "props": {
             "capabilities": [
                 "adc",
-                "anycloud",
                 "arduino",
                 "bsp_gen5",
                 "bt",

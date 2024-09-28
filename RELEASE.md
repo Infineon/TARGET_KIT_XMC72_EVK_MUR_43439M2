@@ -20,6 +20,8 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.1.1
+* Removed the 'AnyCloud' capabilities from the props.json file for KIT_XMC72_EVK_MUR_43439M2 BSP.
 #### v2.1.0
 * Updated the KIT_XMC72_EVK, KIT_XMC72_EVK_MUR_43439M2, KIT_XMC71_EVK_LITE_V1 and KIT_XMC71_EVK_LITE_V2 BSPs to use ECO as main clock source
 #### v2.0.2
