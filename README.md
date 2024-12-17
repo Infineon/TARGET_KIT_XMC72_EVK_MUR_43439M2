@@ -7,7 +7,7 @@ The KIT_XMC72_EVK_MUR_43439M2, and a 272-pin evaluation board, is based on the X
 **Note:**
 KIT_XMC72_EVK_MUR_43439M2 is the board support package for the XMC7200 evaluation kit in combination with the 1YN radio module and supports XMC7000 MCU examples and Wi-Fi connectivity examples.
 
-**The 1YN radio module supports Wi-Fi/Bluetooth® connectivity. However, currently KIT_XMC72_EVK_MUR_43439M2 doesn't support the Bluetooth® functionality and the WLAN functionality in low power mode. For more details, refer to the**
+Certain boards having serial number starting with “2339HTX01“ are loaded with serial flash device S25HL512T instead of S25FL512S.  However, this BSP provides QSPI configurator settings for S25FL512S by default. Please check the serial flash device on your board and change the Memory Part Number  in QSPI configurator accordingly. For more details, refer to the
 [kit release notes](https://www.infineon.com/dgdl/Infineon-KIT_XMC72_EVK-XMC7200-evaluation-kit-release-notes-UserManual-v04_00-EN.pdf?fileId=8ac78c8c8412f8d301842e69fcde7b8a)
 
 
