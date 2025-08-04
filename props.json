@@ -1,12 +1,13 @@
 {
     "core": {
-        "version": "2.3.1.45554"
+        "version": "2.3.2.47414"
     },
     "opt": {
         "props": {
             "capabilities": [
                 "adc",
                 "arduino",
+                "bsp_gen5",
                 "bsp_gen5",
                 "bt",
                 "can",

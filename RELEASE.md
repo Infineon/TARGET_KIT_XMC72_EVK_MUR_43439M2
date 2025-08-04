@@ -20,6 +20,8 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.3.2
+* Updated the startup code to align with mtb-pdl-cat1 v3.17.0 for XMC7000 BSPs
 #### v2.3.1
 * Updated the capabilities in props.json for XMC7000 BSPs
 #### v2.3.0
@@ -60,7 +62,7 @@ This version of the KIT_XMC72_EVK_MUR_43439M2 BSP was validated for compatibilit
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox™ Software Environment        | 3.2.0   |
+| ModusToolbox™ Software Environment        | 3.5.0   |
 | GCC Compiler                              | 11.3.1  |
 | IAR Compiler                              | 9.50.2  |
 | ARM Compiler                              | 6.22    |
