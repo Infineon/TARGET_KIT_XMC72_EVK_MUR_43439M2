@@ -20,6 +20,9 @@ The KIT_XMC72_EVK_MUR_43439M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.3.3
+* Updated the startup code to fix ARM compiler error
+* Update BSP template to v1.7.4
 #### v2.3.2
 * Updated the startup code to align with mtb-pdl-cat1 v3.17.0 for XMC7000 BSPs
 #### v2.3.1
